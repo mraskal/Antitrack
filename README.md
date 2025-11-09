@@ -44,7 +44,7 @@ Root/admin privileges (on Linux/Termux)
 pip install scapy
 ```
 ```bash
-git clone https://github.com/yourusername/AntiTrack.git
+git clone https://github.com/mraskal/AntiTrack.git
 ```
 ```bash
 cd AntiTrack

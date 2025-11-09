@@ -38,15 +38,21 @@
 Python 3.10+
 scapy library
 Root/admin privileges (on Linux/Termux)
-
+```
 ## Installation
 ```bash
 pip install scapy
+```
 git clone https://github.com/yourusername/AntiTrack.git
+```
 cd AntiTrack
+```
 pip install scapy
-
+```
+## Usage
+```bash
 sudo python3 antitrack.py 192.168.1.100 -p 443 -f windows_10 -c 3
+```
 sudo python3 antitrack.py 192.168.1.100 --noise 100
 python3 antitrack.py --list
 

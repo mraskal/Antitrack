@@ -67,14 +67,15 @@ sudo python3 antitrack.py 192.168.1.100 --noise 100
 python3 antitrack.py --list
 ```
 ## Supported OS Fingerprints
-# OS
-# Windows 10
-# Windows 7
-# Linux 5.x
-# Linux 3.x
-# Random (dynamic)
+**OS**
+**Windows 10**
+**Windows 7**
+**Linux 5.x**
+**Linux 3.x**
+**Random (dynamic)**
 
 ## Sample Report (JSON)
+```bash
 {
   "session_id": "20251109_152301",
   "start_time": "2025-11-09T15:23:01.123456",
@@ -100,32 +101,34 @@ python3 antitrack.py --list
   ],
   "end_time": "2025-11-09T15:23:02.567"
 }
+```
 
 ## Quick commands 
 
 # Spoof Windows 10 on port 443
+```bash
 sudo python3 antitrack.py 10.10.10.10 -p 443 -f windows_10
-
+```
 # Send 50 random packets (noise)
+```bash
 sudo python3 antitrack.py 10.10.10.10 --noise 50
-
+```
 # Use specific interface
+```bash
 sudo python3 antitrack.py 192.168.1.1 -i wlan0 -f linux_5_x
-
+```
 # Spoof Windows 10 on port 443
+```bash
 sudo python3 antitrack.py 10.10.10.10 -p 443 -f windows_10
-
+```
 # Send 50 random packets (noise)
+```bash
 sudo python3 antitrack.py 10.10.10.10 --noise 50
-
+```
 # Use specific interface
+```bash
 sudo python3 antitrack.py 192.168.1.1 -i wlan0 -f linux_5_x
-
-pkg install python tsu
-pip install scapy
-tsu
-python3 antitrack.py 192.168.43.1 --noise 30
-
+```
 ## Termux support
 ``` bash
 pkg install python tsu
@@ -134,9 +137,9 @@ tsu
 python3 antitrack.py 192.168.43.1 --noise 30
 ```
 # Legal Disclaimer
-For educational and research purposes only.
-Do not use on networks or devices you do not own or without explicit permission.
-The author is not responsible for misuse.
+> For educational and research purposes only.
+> Do not use on networks or devices you do not own or without explicit permission.
+> The author is not responsible for misuse.
 
 # Contributing
 Welcome:

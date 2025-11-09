@@ -43,19 +43,38 @@ Root/admin privileges (on Linux/Termux)
 ```bash
 pip install scapy
 ```
+```bash
 git clone https://github.com/yourusername/AntiTrack.git
 ```
+```bash
 cd AntiTrack
 ```
+```bash
 pip install scapy
 ```
 ## Usage
+
+**Spoof a specific OS**
 ```bash
 sudo python3 antitrack.py 192.168.1.100 -p 443 -f windows_10 -c 3
 ```
+**noise Burst**
+```bash
 sudo python3 antitrack.py 192.168.1.100 --noise 100
+```
+**List Available Fingerprints**
+```bash
 python3 antitrack.py --list
+```
+## Supported OS Fingerprints
+# OS
+# Windows 10
+# Windows 7
+# Linux 5.x
+# Linux 3.x
+# Random (dynamic)
 
+## Sample Report (JSON)
 {
   "session_id": "20251109_152301",
   "start_time": "2025-11-09T15:23:01.123456",
@@ -82,6 +101,17 @@ python3 antitrack.py --list
   "end_time": "2025-11-09T15:23:02.567"
 }
 
+## Quick commands 
+
+# Spoof Windows 10 on port 443
+sudo python3 antitrack.py 10.10.10.10 -p 443 -f windows_10
+
+# Send 50 random packets (noise)
+sudo python3 antitrack.py 10.10.10.10 --noise 50
+
+# Use specific interface
+sudo python3 antitrack.py 192.168.1.1 -i wlan0 -f linux_5_x
+
 # Spoof Windows 10 on port 443
 sudo python3 antitrack.py 10.10.10.10 -p 443 -f windows_10
 
@@ -96,6 +126,13 @@ pip install scapy
 tsu
 python3 antitrack.py 192.168.43.1 --noise 30
 
+## Termux support
+``` bash
+pkg install python tsu
+pip install scapy
+tsu
+python3 antitrack.py 192.168.43.1 --noise 30
+```
 # Legal Disclaimer
 For educational and research purposes only.
 Do not use on networks or devices you do not own or without explicit permission.
@@ -110,7 +147,7 @@ GUI frontend
 Fork → Modify → Pull Request
 License
 
-MIT License – Free to use, modify, and distribute.
-�
-created with ♥ love by #ASKAL 
+**MIT License** – Free to use, modify, and distribute.
+
+created with ♥ love by **ASKAL** 
 

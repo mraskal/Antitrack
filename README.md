@@ -81,3 +81,26 @@ sudo python3 antitrack.py 10.10.10.10 --noise 50
 # Use specific interface
 sudo python3 antitrack.py 192.168.1.1 -i wlan0 -f linux_5_x
 
+pkg install python tsu
+pip install scapy
+tsu
+python3 antitrack.py 192.168.43.1 --noise 30
+
+# Legal Disclaimer
+For educational and research purposes only.
+Do not use on networks or devices you do not own or without explicit permission.
+The author is not responsible for misuse.
+
+# Contributing
+Welcome:
+New OS fingerprints
+Report enhancements
+IPv6 support
+GUI frontend
+Fork → Modify → Pull Request
+License
+
+MIT License – Free to use, modify, and distribute.
+�
+created with ♥ love by #ASKAL 
+
